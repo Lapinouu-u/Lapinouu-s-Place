@@ -37,8 +37,10 @@
             <input name="nom" type="text" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Ex : Lapinouu" />
           </div>
           <div>
-            <label class="block mb-2 font-semibold">Adresse e-mail / Discord</label>
-            <input name="email" type="text" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="ton@email.com" />
+            <div>
+              <label class="block mb-2 font-semibold">Contact (e-mail ou Discord)</label>
+              <input name="contact" type="text" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Ex : Lapinouu#1234 ou lapinouu@email.com" />
+            </div>
           </div>
           <div>
             <label class="block mb-2 font-semibold">Description du projet</label>
@@ -62,7 +64,7 @@
 
     const data = {
       nom: form.querySelector('[name="nom"]').value,
-      email: form.querySelector('[name="email"]').value,
+      contact: form.querySelector('[name="contact"]').value,
       description: form.querySelector('[name="description"]').value,
     };
 
